@@ -1,0 +1,7 @@
+__pycache__
+.*/
+cache/
+logs/
+test*
+settings.py
+cookies.txt
