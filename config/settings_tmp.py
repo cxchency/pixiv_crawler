@@ -1,11 +1,6 @@
-
 # 日志记录器
 from core.logger import get_logger
-from core.utils import load_cookies_from_file
 logger = get_logger('pixiv')
-
-# 从文件加载 cookies（请确保 config/cookies.txt 只有一行完整 cookie 字符串）
-COOKIES = load_cookies_from_file("config/cookies.txt")
 
 # 目标用户 ID（需填写你要爬取的 Pixiv 用户的数字 ID，例如 '12345678'）
 TARGET_USER_ID = ""

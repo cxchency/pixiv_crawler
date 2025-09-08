@@ -6,6 +6,9 @@ import requests
 import time
 
 from config.settings import *
+from core.utils import load_cookies_from_file
+
+COOKIES = load_cookies_from_file("config/cookies.txt")
 
 def download_image(url: str, save_path: str, use_cookies: bool = False, retry: int = 5) -> None:
     """使用aria2下载图片，带重试和完整性检查"""
